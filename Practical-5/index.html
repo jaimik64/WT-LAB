@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .box {
+            width: 10%;
+            height: 5%;
+            border-width: 10px;
+            margin: 2%;
+            border-color: red;
+            border-style: solid;
+            padding-left: 0.5cm;
+            border-right-width: 5px;
+            border-left-color: blue;
+            border-right-color: blue;
+            border-right-style: solid;
+        }
+
+        .a {
+            white-space: nowrap;
+            width: 10%;
+            margin: 1%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            border: 1px solid #000000;
+        }
+
+        .a:hover {
+            overflow: visible;
+            width: 100%;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The text-overflow Property</h1>
+
+    <p>Hover over the div below, to see the entire text.</p>
+
+    <span>ellipsis : </span>
+    <div class="a">This is some long text that will not fit in the box.</div>
+    <span>clip/initial : </span>
+    <div class="a" style="text-overflow: clip;">This is some long text that will not fit in the box.</div>
+    <span class="box">the first span. the first pan testing for box model. check it out. </span>
+</body>
+
+</html>
