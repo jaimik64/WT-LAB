@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <main>
+        <h2>Student Registration Form</h2>
+        <hr style="background-color: black; color: black;" />
+        <form>
+            <div class="form-row margin">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">First Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter First Name" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Last Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter Last Name" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group margin">
+                <label for="exampleInputEmail1">Enrollment-No <span style="color: red;">*</span></label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter Enrollment-No/ Roll-No" required />
+            </div>
+
+            <div class="Form-row margin">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Contact No:</label>
+                        <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter Contact Number(India Only)" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-3">
+                        <label for="exampleInputEmail1">Mail-Id <span style="color: red;">*</span></label>
+                        <input type="mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter Institute Mail-Id" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group margin">
+                <label for="exampleInputEmail1">Street Address</label>
+                <textarea class="form-control" id="exampleInputEmail1" placeholder="Enter Enrollment-No/ Roll-No">
+                </textarea>
+            </div>
+
+            <div class="Form-row margin">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Area</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter Area" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">City</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter City" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">State</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter State" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="Form-row margin">
+                <div class="col">
+
+                    <label>Gender</label>
+                    <div class="form-check">
+
+                        <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="Male">
+                        <label class="form-check-label" for="exampleRadios1" style="margin-left: 3%;">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="Female">
+                        <label class="form-check-label" for="exampleRadios2" style="margin-left: 3%;">
+                            Female
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Select Qualification</option>
+                            <option value="SSC">SSC</option>
+                            <option value="HSC">HSC</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="Degree">Degree</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <label>Smartphone You're Interested In:</label>
+            <div class="col-auto" style="display: inline;">
+                <div class="form-check mb-2" style="display: inline;">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                    <label class="form-check-label" for="autoSizingCheck" style="margin-left: 1.5%;">
+                        S21
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-auto " style="display: inline;">
+                <div class="form-check mb-2" style="display: inline;">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                    <label class="form-check-label" for="autoSizingCheck" style="margin-left: 1.5%;">
+                        S21 Plus
+                    </label>
+                </div>
+            </div>
+            <div class="col-auto" style="display: inline;">
+                <div class="form-check mb-2" style="display: inline;">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                    <label class="form-check-label" for="autoSizingCheck" style="margin-left: 1.5%;">
+                        S21 Ultra
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group margin" style="margin-top: 2%;">
+                <label for="exampleInputEmail1">Twitter Username <span style="color: red;">*</span></label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Twitter Username (xyz)" required />
+            </div>
+
+            <div class="bt margin">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </main>
+    <script>
+
+        $("button").click(function () {
+            console.log("response received")
+            alert('response received')
+        });
+    </script>
+    <footer>
+        <span>Created By : Jaimik Chauhan</span>
+        <span>Roll Call : <a href="mailto:20bce503@nirmauni.ac.in">20BCE503</a></span>
+        <a class="link" href="https://www.linkedin.com/in/jaimikchauhan64/"><img src="image-map/linkedin.png" />
+        </a>&nbsp; &nbsp;
+        <a class="link" href="https://github.com/jaimik64"><img src="image-map/GitHub-Mark-Light-32px.png" /></a>&nbsp;
+        &nbsp;
+        <a class="link" href="https://twitter.com/Jaaimik"><img src="image-map/twitter.png" /></a>
+    </footer>
+</body>
+
+</html>

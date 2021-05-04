@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Frame 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            padding: 2%;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        a::after {
+            color: antiquewhite;
+
+        }
+
+        footer {
+            color: white;
+            height: max-content;
+            width: auto;
+            margin: 1%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #menu {
+            height: 65%;
+            width: auto;
+        }
+
+        #drp {
+            text-align: left;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div id="menu" function="he">
+        <h2>Menu</h2>
+        <a target="f2" href="p1.html">View Practical-1</a>
+        <a target="f2" href="resume.html">View Practical-2 </a>
+        <a target="f2" href="https://scratchiest-pulse.000webhostapp.com/">View Project-1</a>
+        <a href="#" id="drop">View Imprtant Links</a>
+        <div id="drp">
+            <ul>
+                <a target="f2" href="https://lms.nirmauni.ac.in/">
+                    <li>LMS</li>
+                </a>
+
+                <a target="f2" href="https://erp.nirmauni.ac.in/nirmalive">
+                    <li>ERP</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#drp").hide();
+            $("#drop").click(function () {
+                $("#drp").toggle();
+            });
+        });
+    </script>
+    <footer>
+        <hr>
+        <a class="link" target="blank" href="tel:8401563076"><img
+                src="https://img.icons8.com/android/24/000000/phone.png" height="20px" width="20px" /></a>&nbsp; &nbsp;
+        <a class="link" target="blank" href="mailto:jaimikchauhan10@gmail.com"><img
+                src="https://img.icons8.com/material-sharp/24/000000/important-mail.png" height="20px"
+                width="20px" /></a>&nbsp; &nbsp;
+        <a class="link" target="blank" href="https://www.linkedin.com/in/jaimikchauhan64/"><img
+                src="https://img.icons8.com/android/24/000000/linkedin.png" height="20px" width="20px" />
+        </a>&nbsp; &nbsp;
+        <a class="link" target="blank" href="https://github.com/jaimik64"><img
+                src="https://img.icons8.com/material-sharp/24/000000/github.png" /></a>&nbsp; &nbsp;
+        <a class="link" target="blank" href="https://twitter.com/Jaaimik"><img
+                src="https://img.icons8.com/android/24/000000/twitter.png" /></a>
+    </footer>
+</body>
+
+</html>

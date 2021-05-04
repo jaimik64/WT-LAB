@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Frame Tag</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<frameset cols="15%,*" id="link" border="2px solid black">
+    <frame name="f1" scroll="no" id="hde" src="f1.html" />
+    <frame name="f2" src="f2.html" />
+</frameset>
+<script>
+    $(document).ready(function () {
+        $("#hde").click(function () {
+            $("#drp").toggle();
+        });
+    });
+</script>
+
+</html>

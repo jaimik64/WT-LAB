@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Frame 2</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: antiquewhite;
+
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Welcome to Website</h2>
+    </div>
+    <h3><strong>Note : </strong>
+        Click Side Menu To Explore Website</h3>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#drp").hide();
+        $("#drop").click(function () {
+            $("#drp").toggle();
+        });
+    });
+</script>
+
+</html>

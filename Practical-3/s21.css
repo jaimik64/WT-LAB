@@ -1,0 +1,58 @@
+.main {
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 48px;
+}
+
+
+.homeImg {
+    height: 584px;
+    width: 1000px;
+}
+
+.s21 .s21p{
+    height: auto;
+    width: auto;
+    float: left;
+} 
+
+.img {
+    height: auto;
+    width: auto;
+    margin: 3%;
+}
+.menu {
+    border: 2px solid black;
+}
+.s21u {
+    height: auto;
+    width: auto;
+    float: left;
+    margin-right: 5%;
+}
+
+.ft {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-top: 7%;
+    width: auto;
+}
+
+.ft a {
+    color: white;
+}
+
+.ft img {
+    height: 20px;
+    width: 20px;
+}
+
+.ft span {
+    margin: 6px;
+    display: block;
+}

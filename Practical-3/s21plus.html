@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>
+        S21 Ultra Details
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="s21.css" />
+    <script>
+        $(document).ready(function () {
+            $(".camera_details").hide();
+            $(".spec").hide();
+
+            $("#camera").click(function () {
+                $(".camera_details").fadeToggle(2000);
+                $(".spec").hide();
+                $(".note").hide();
+            });
+
+            $(".specs").click(function () {
+                $(".spec").slideToggle(5000);
+                $(".note").hide();
+                $(".camera_details").hide();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="card text-center" style="background-color:lightgray;">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li>
+                    <a class="nav-item" href="Practical-3.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="s21ultra.html">S21 Ultra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="s21plus.html">S21 Plus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="s21.html">S21</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-md">
+                <h2>S21 Plus Details</h2>
+                <div class="s21p">
+
+                    <img src="image-map/s21Plus_image.jpg" usemap="#imap" height="700px" width="565px" />
+
+                    <map name="imap">
+                        <area shape="rect" id="camera" coords="36,38,104,209" alt="Camera" href="#Camera"
+                            class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Camera Details">
+                        <area shape="rect" class="specs" coords="118,36,502,682" alt="Camera" href="#Features"
+                            class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Specification">
+                        <area shape="rect" class="specs" coords="27,219,118,661" alt="Camera" href="#Features"
+                            class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Specification">
+                    </map>
+                </div>
+            </div>
+            <div class="col col-md">
+                <div class="camera_details">
+                    <h3>Camera Details</h3>
+                    <img src="image-map/s21Plus_camera.jpg" height="50%" width="100%" alt="Loading..." />
+
+                    <img src="image-map/s21_camera_details.jpg" style="margin-top: 3%;" height="50%" width="100%"
+                        alt="Loading..." />
+                </div>
+
+                <div class="spec">
+                    <h3 style="margin-bottom: 5%;">Specification</h3>
+                    <a href="image-map/s21_s21p_specs.jpg" download="true" class="btn btn-secondary"
+                        data-toggle="tooltip" data-placement="top" title="Download Image"><img
+                            class="img-fluid float-right" src="image-map/s21_s21p_specs.jpg" width="100%" height="100%"
+                            alt="Loading..." /></a>
+                </div>
+                <div class="note">
+                    <h3><b>Note : </b>Click on Image to Know More.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="ft">
+        <span>Created By : Jaimik Chauhan</span>
+        <span>Roll Call : <a href="mailto:20bce503@nirmauni.ac.in">20BCE503</a></span>
+        <a class="link" href="https://www.linkedin.com/in/jaimikchauhan64/"><img src="image-map/linkedin.png" />
+        </a>&nbsp; &nbsp;
+        <a class="link" href="https://github.com/jaimik64"><img src="image-map/GitHub-Mark-Light-32px.png" /></a>&nbsp;
+        &nbsp;
+        <a class="link" href="https://twitter.com/Jaaimik"><img src="image-map/twitter.png" /></a>
+    </footer>
+</body>
+
+</html>

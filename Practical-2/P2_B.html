@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Frame Tag</title>
+</head>
+
+<frameset rows="30%,50%,20%" cols="50%,25%,25%" border="2px solid blue" id="main" frameborder="2px solid gray">
+    <frame id="f1" src="f1.html" />
+    <frame id="f2" src="f2.html" />
+    <frame id="f3" src="f3.html" />
+
+    <frame id="f4" src="f4.html" />
+    <frame id="f5" src="f5.html" />
+    <frame id="f6" src="f6.html" />
+
+    <frame id="here" />
+    <a target="top" href="#f1">Frame 1</a>
+    <a target="top" href="#f2">Frame 2</a>
+    <a target="top" href="#f3">Frame 3</a>
+    <a target="top" href="#f4">Frame 4</a>
+    <a target="top" href="#f5">Frame 5</a>
+    <a target="top" href="#f6">Frame 6</a>
+
+    <noframes>
+        Sorry this document requires a frame capable browser.
+    </noframes>
+</frameset>
+
+
+</html>
