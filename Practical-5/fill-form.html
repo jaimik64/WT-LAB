@@ -21,23 +21,22 @@
 
 <body>
 
+    <h2 id="myHeader">Giveaway Registration Form</h2>
     <main>
-        <h2>Giveaway Registration Form</h2>
-        <hr style="background-color: black; color: black;" />
-        <form>
+        <form name="forms">
             <div class="form-row margin">
                 <div class="col">
                     <div class="form-group">
                         <label for="exampleInputEmail1">First Name <span style="color: red;">*</span></label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter First Name" required>
+                            placeholder="Enter First Name" name="fname" required>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Last Name <span style="color: red;">*</span></label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter Last Name" required>
+                            placeholder="Enter Last Name" name="lname" required>
                     </div>
                 </div>
             </div>
@@ -45,7 +44,7 @@
             <div class="form-group margin">
                 <label for="exampleInputEmail1">Enrollment-No <span style="color: red;">*</span></label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter Enrollment-No/ Roll-No" required />
+                    placeholder="Enter Enrollment-No/ Roll-No" name="eno" required />
             </div>
 
             <div class="Form-row margin">
@@ -89,8 +88,46 @@
                 <div class="col">
                     <div class="form-group">
                         <label for="exampleInputEmail1">State</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter State" />
+                        <input type="text" class="form-control" id="state" aria-describedby="emailHelp"
+                            placeholder="Enter State" list="states" />
+                        <datalist name="state" id="states">
+                            <option value="Andhra Pradesh">
+                            <option value="Andaman and Nicobar Islands">
+                            <option value="Arunachal Pradesh">
+                            <option value="Assam">
+                            <option value="Bihar">
+                            <option value="Chandigarh">
+                            <option value="Chhattisgarh">
+                            <option value="Dadar and Nagar Haveli">
+                            <option value="Daman and Diu">
+                            <option value="Delhi">
+                            <option value="Lakshadweep">
+                            <option value="Puducherry">
+                            <option value="Goa">
+                            <option value="Gujarat">
+                            <option value="Haryana">
+                            <option value="Himachal Pradesh">
+                            <option value="Jammu and Kashmir">
+                            <option value="Jharkhand">
+                            <option value="Karnataka">
+                            <option value="Kerala">
+                            <option value="Madhya Pradesh">
+                            <option value="Maharashtra">
+                            <option value="Manipur">
+                            <option value="Meghalaya">
+                            <option value="Mizoram">
+                            <option value="Nagaland">
+                            <option value="Odisha">
+                            <option value="Punjab">
+                            <option value="Rajasthan">
+                            <option value="Sikkim">
+                            <option value="Tamil Nadu">
+                            <option value="Telangana">
+                            <option value="Tripura">
+                            <option value="Uttar Pradesh">
+                            <option value="Uttarakhand">
+                            <option value="West Bengal">
+                        </datalist>
                     </div>
                 </div>
             </div>
@@ -158,7 +195,7 @@
             <div class="form-group margin" style="margin-top: 2%;">
                 <label for="exampleInputEmail1">Twitter Username <span style="color: red;">*</span></label>
                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Twitter Username (xyz)" required />
+                    placeholder="Twitter Username (xyz)" name="twitter" required />
             </div>
 
             <div class="bt margin">
@@ -167,10 +204,23 @@
         </form>
     </main>
     <script>
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $("h2").addClass("sticky");
+            } else {
+                $("h2").removeClass("sticky");
+            }
+        });
 
         $("button").click(function () {
-            console.log("response received")
-            alert('response received')
+            console.log($("fname").val)
+            if ((document.forms["forms"]["fname"].value == ' ') || (document.forms["forms"]["lname"].value == ' ') || (document.forms["forms"]["eno"].value == ' ') || (document.forms["forms"]["twitter"].value == ' ')) {
+                console.log("Please fill out required details")
+                alert('Please Fill Out Required Fields')
+            } else {
+                console.log("response received")
+                alert('Response Received')
+            }
         });
     </script>
     <footer>

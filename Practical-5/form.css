@@ -1,4 +1,6 @@
 main {
+    position: relative;
+    /* top:auto; */
     border: 2px dashed black;
     border-radius: 20px;
     margin: 5%;
@@ -37,11 +39,23 @@ footer {
 }
 
 h2 {
+    height: 10%;
     padding: 2%;
-    margin: 2%;
     text-align: center;
-    background-color: black;
+    background-color:#555;
     color: white;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.sticky {
+    position:sticky;
+    top: 0;
+    width: 100%;
+    font-size: larger;
+}
+.sticky + main{
+    padding-top: 5%;
 }
 
 @media only screen and (max-width: 400px) {
