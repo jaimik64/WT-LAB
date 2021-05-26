@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Merge Two Data</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            body{
+                text-align: center;
+            }
+            span{
+                display: block;
+                margin: 1%;
+            }
+            button{
+                margin-top: 2%;
+            }
+            h1{
+                margin: 2%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Merge Two Arrays Without Duplicating </h1><hr/>
+
+        <span><label>Value for Array-1 : </label><input type="text" onchange="val1();" id="a1" /></span>
+        <span><label>Value for Array-2 : </label><input type="text" onchange="val2();" id="a2" /></span> 
+        <button id="mergeArray" onclick="mergeArray();">Merge Data Without Duplicate</button>
+        <h3 id="data1"></h3>
+        <h3 id="data2"></h3>
+        <h3 id="merge"></h3>
+    </body>
+    <script>
+        a1 = []
+        a2 = []
+        function val1(){
+            var data = document.getElementById("a1").value;
+            document.getElementById("a1").innerHTML = " ";
+            a1.push(data);
+            document.getElementById("data1").innerHTML = "Array 1 : " + a1.join(", ");
+            console.log(a1);
+        }
+        function val2(){
+            var data = document.getElementById("a2").value;
+            a2.push(data);
+            document.getElementById("a2").innerHTML = " ";
+            document.getElementById("data2").innerHTML = "Array 2 : " + a2.join(", ");
+        }
+
+        function mergeArray(){
+            if(a1.length == 0 || a2.length == 0){
+                document.getElementById("merge").innerHTML = "Enter Value in Both the Arrays."
+            }
+            else{
+                var combined = a1.concat(a2);
+                combined = [...new Set([...a1,...a2])];
+                console.log(combined);
+                document.getElementById("merge").innerHTML = "Merged Array (Without Duplicating Value) : " + combined.join(" ");
+            }
+        }
+    </script>
+</html>
