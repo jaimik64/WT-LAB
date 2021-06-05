@@ -1,0 +1,104 @@
+<html>
+
+<head>
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js "></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h2 id="myHeader">Giveaway Registration Form</h2>
+    <main  ng-app="">
+            <div class="form-row margin">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="firstname">First Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="firstname" ng-model="fn" 
+                         placeholder="Enter First Name" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="lastname">Last Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="lastname" aria-describedby="emailHelp"
+                           ng-model="lname" placeholder="Enter Last Name" name="lname" required>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="form-group margin">
+                <label for="enrollno">Enrollment-No <span style="color: red;">*</span></label>
+                <input type="text" class="form-control" id="enrollno" aria-describedby="emailHelp"
+                  ng-model="eno"  placeholder="Enter Enrollment-No/ Roll-No" name="eno" required />
+            </div>
+
+            <div class="Form-row margin">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">College Fees :</label>
+                        <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           ng-model="cno" placeholder="Enter College Fees " min="10" max="10"/>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-3">
+                        <label for="exampleInputEmail1">Mail-Id <span style="color: red;">*</span></label>
+                        <input type="mail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           ng-model="mail" placeholder="Enter Institute Mail-Id" required />
+                    </div>
+                </div>
+            </div>
+            <div class="bt margin">
+                <button id="submit" class="btn btn-primary">Submit</button>
+            </div>
+            <div class="details">
+                <h2 >Your Details :</h2>
+                <h3>Name (Uppercase): {{ fn | uppercase }} {{ lname | uppercase }}</h3>
+                <h3>Enrollment-No (Lowercase) : {{ eno | lowercase }} </h3>
+                <h3>College Fees (Currency-Filter) : {{ cno | currency:"₹":0 }}</h3>
+                <h3>Mail Id (Uppercase) : {{ mail | uppercase }}</h3>
+            </div>
+    </main>
+    
+    <script>
+        // $(document).ready(function(){
+        //     $(".details").hide();
+        //     $("#submit").click(function(){
+        //         $(".details").show();
+        //     });
+        // });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1) {
+                $("h2").addClass("sticky");
+            } else {
+                $("h2").removeClass("sticky");
+            }
+        });
+
+    </script>
+    <footer>
+        <span>Created By : Jaimik Chauhan</span>
+        <span>Roll Call : <a href="mailto:20bce503@nirmauni.ac.in">20BCE503</a></span>
+        <a class="link" href="https://www.linkedin.com/in/jaimikchauhan64/"><img src="image-map/linkedin.png" />
+        </a>&nbsp; &nbsp;
+        <a class="link" href="https://github.com/jaimik64"><img src="image-map/GitHub-Mark-Light-32px.png" /></a>&nbsp;
+        &nbsp;
+        <a class="link" href="https://twitter.com/Jaaimik"><img src="image-map/twitter.png" /></a>
+    </footer>
+</body>
+
+</html>

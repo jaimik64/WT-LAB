@@ -1,0 +1,94 @@
+main {
+  position: relative;
+  top: auto;
+  border: 2px dashed black;
+  border-radius: 20px;
+  margin: 5%;
+  padding: 2%;
+}
+
+.bt {
+  text-align: center;
+}
+
+.margin {
+  margin: 1%;
+}
+.rmargin {
+  margin-left: 3%;
+}
+
+.checkBoxMargin {
+  margin-left: 1.5%;
+}
+
+footer a {
+  color: white;
+}
+
+footer img {
+  height: 20px;
+  width: 20px;
+}
+
+footer span {
+  margin: 6px;
+  display: block;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  width: auto;
+  margin-top: 8%;
+}
+
+h2 {
+  height: 10%;
+  padding: 2%;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  font-size: larger;
+}
+.sticky + main {
+  padding-top: 5%;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    padding: 5%;
+  }
+  .margin {
+    margin-top: 1%;
+    margin: 2%;
+  }
+
+  .rmargin {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 5%;
+  }
+  .margin {
+    margin-top: 1%;
+    margin: 2%;
+  }
+
+  .rmargin {
+    margin-left: 13%;
+  }
+}
