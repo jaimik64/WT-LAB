@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js "></script>
+        <style>
+            .box{
+                height: auto;
+                width: 80%;
+                margin: 5%;
+                border: 2px solid black;
+                padding: 2%;
+                border-radius: 25px;
+            }
+            .in{
+                display: block;
+                margin: 1%;
+            }
+            .h1{
+                text-align: center;
+                margin-bottom: 2%;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div data-ng-app="myApp" ng-controller="myCtrl"  class="box">
+            <h2 class="h1">Form Created Using Angular Controller</h2>
+            <hr/>
+            <div class="in" style="margin-top:3%;">
+               First Name : <input type="text" ng-model="fname"/>
+            </div>
+            <div class="in">
+                Last Name : <input type="text" ng-model="lname"/>
+            </div>
+            <h2 ng-bind="'Hello, '+fname + ' ' +lname"></h2>
+        </div>
+        <script>
+            var app = angular.module('myApp',[]);
+            app.controller('myCtrl', function($scope){
+                $scope.fname = "";
+                $scope.lname='';
+            });
+        </script>
+    </body>
+</html>
+        
