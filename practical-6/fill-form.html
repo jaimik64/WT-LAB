@@ -1,0 +1,90 @@
+<html>
+    <!-- ∙ First Name and Last Name should not be empty.
+    ∙ Name fields should accept letters only.
+    ∙ Email should be in the form of DDCCCDDD@nirmauni.ac.in , where D
+    and C represent any digit and letter, respectively.
+    ∙ Password must be a minimum of eight characters long consisting of
+    a combination of uppercase letter, lowercase letter, and digits. ∙
+    Password and re-type password must be the same. -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form.css" />
+    <!-- <script  href="form.js"></script>    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <main>
+        <h2 id="title">Student Registration Form</h2>
+        <hr style="background-color: black; color: black;" />
+        <form name="myForm" >
+            <div class="form-row margin">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="fname">First Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="fname" aria-describedby="emailHelp" name="fn"
+                            placeholder="Enter First Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode ==32)" required>
+                        <span id="fnameAlert"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="lname">Last Name <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control" id="lname" aria-describedby="emailHelp" name="ln"
+                            placeholder="Enter Last Name" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode ==32)" required>
+                        <span id="lnameAlert"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group margin">
+                <label for="mail">Mail-Id <span style="color: red;">*</span></label>
+                <input type="mail" class="form-control" id="mail" aria-describedby="emailHelp" name="mail-id"
+                    placeholder="Enter Institute Mail-Id" required/>
+            </div>
+
+            <div class="Form-row margin">
+                <div class="col">
+                    <div class="form-group" >
+                        <label for="pas" data-toggle="tooltip" data-placement="top" title="Password Must Contain Uppercase letters, lowercase letters and digit only">Password <span style="color: red;" >*</span></label>
+                        <input type="password" class="form-control" id="pas" aria-describedby="emailHelp" name="ps" data-toggle="tooltip" data-placement="top" title="Password Must Contain Uppercase letters, lowercase letters and digit only" required/>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-3">
+                        <label for="repas" data-toggle="tooltip" data-placement="top" title="Password Must Contain Uppercase letters, lowercase letters and digit only">Re-Type Password : </label>
+                        <input type="password" class="form-control" id="repas" aria-describedby="emailHelp" name="rps" data-toggle="tooltip" data-placement="top" title="Password Must Contain Uppercase letters, lowercase letters and digit only" required/>
+                    </div>
+                </div>
+            </div>
+            <div class="bt margin">
+                <button class="btn btn-primary" onclick="validateForm();" id="Submit">Submit</button>
+            </div>
+        </form>
+        <script src="form.js"></script>
+
+    </main>
+    <footer>
+        <span>Created By : Jaimik Chauhan</span>
+        <span>Roll Call : <a href="mailto:20bce503@nirmauni.ac.in">20BCE503</a></span>
+        <!-- <a class="link" href="https://www.linkedin.com/in/jaimikchauhan64/"><img src="image-map/linkedin.png" />
+        </a>&nbsp; &nbsp;
+        <a class="link" href="https://github.com/jaimik64"><img src="image-map/GitHub-Mark-Light-32px.png" /></a>&nbsp;
+        &nbsp;
+        <a class="link" href="https://twitter.com/Jaaimik"><img src="image-map/twitter.png" /></a> -->
+    </footer>
+</body>
+
+</html>

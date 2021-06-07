@@ -1,0 +1,51 @@
+main {
+    border: 2px dashed black;
+    border-radius: 20px;
+    margin: 5%;
+    padding: 2%;
+}
+
+.bt {
+    text-align: center;
+}
+
+.margin {
+    margin: 1%;
+}
+
+footer a {
+    color: white;
+}
+
+footer img {
+    height: 20px;
+    width: 20px;
+}
+
+footer span {
+    margin: 6px;
+    display: block;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    width: auto;
+    margin-top: 8%;
+}
+
+h2 {
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+    main {
+        padding: 5%;
+    }
+}
