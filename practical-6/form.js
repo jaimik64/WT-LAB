@@ -21,11 +21,16 @@ function validateForm()
               
                   if(password.length >= 8 && repass.length >= 8){
                       var result = password.match(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,20}/);
-                      if(password == result){
-                          alert("registration Successfulll");
-                      }else{
-                          alert("Your password must contain atleast one uppercase letter, one lowercase letter and one digit only");
+                      if (password == repass) {
+                        if (password == result) {
+                            alert("registration Successfulll"); 
+                        }else{
+                            alert("Your password must contain atleast One Uppercase letter, One Lowercase letter And One Digit Only.");
+                        }
+                      } else {
+                          alert("Both Passwords Must be Same.");
                       }
+                      
                   }else{
                       alert("Password Length Must be More than 8");
                   }
