@@ -24,7 +24,7 @@ function validateForm()
                       if(password == result){
                           alert("registration Successfulll");
                       }else{
-                          alert("Enter Only Uppercase letters, Lowercase letters and digits only");
+                          alert("Your password must contain atleast one uppercase letter, one lowercase letter and one digit only");
                       }
                   }else{
                       alert("Password Length Must be More than 8");
